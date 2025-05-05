@@ -10,10 +10,10 @@ const winningCombos = [
 
 
   /*---------------------------- Variables (state) ----------------------------*/
-  let board, turn, winner, tie;
-  
-
-
+  let board = ['', '', '', '', '', '', '', '', ''];
+  let turn = `X`;
+  let winner = `false`;
+  let tie = `false`;  
 
 
 
