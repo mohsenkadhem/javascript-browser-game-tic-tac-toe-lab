@@ -5,14 +5,29 @@ const winningCombos = [
     [0, 4, 8], [2, 4, 6]
   ];
   
+
+
+
+
   /*---------------------------- Variables (state) ----------------------------*/
   let board, turn, winner, tie;
   
+
+
+
+
+
   /*------------------------ Cached Element References ------------------------*/
   const squareEls = document.querySelectorAll('.sqr');
   const messageEl = document.getElementById('message');
   const resetBtnEl = document.getElementById('reset');
   
+
+
+
+
+
+
   /*-------------------------------- Functions --------------------------------*/
   function init() {
     board = ['', '', '', '', '', '', '', '', ''];
@@ -79,10 +94,18 @@ const winningCombos = [
     turn = turn === 'X' ? 'O' : 'X';
   }
   
+
+
+
+
+
+
+
+
+  
   /*----------------------------- Event Listeners -----------------------------*/
   squareEls.forEach(square => square.addEventListener('click', handleClick));
   resetBtnEl.addEventListener('click', init);
   
-  // Initialize game
   init();
   
